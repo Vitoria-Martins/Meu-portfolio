@@ -6,12 +6,16 @@
   text-decoration: none;
   list-style: none;
 }
+button {
+  cursor: pointer;
+}
 
 strong {
   color: #f818f8;
 }
 body {
   /* background-image: url(imagens/fundonew.jpeg); */
+
   background-color: black;
   color: white;
   position: relative;
@@ -147,7 +151,10 @@ body {
 
 .skills > img {
   margin-left: 30px;
+
   width: 30px;
+  background-color: #01020ebc;
+  border-radius: 10px;
 }
 
 /* habilidades */
@@ -188,12 +195,32 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 20px;
+  width: 70px;
+  height: 70px;
+}
+
+.txtHab {
   padding: 30px;
-  width: 120px;
-  height: 120px;
+  height: 145px;
+  margin: 20px;
   border-radius: 8px;
   background-color: #01020ebc;
+}
+
+.txtHab h3 {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.txtHab img:hover + h3 {
+  display: block;
+}
+
+.txtHab img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .imghtml:hover {
@@ -215,21 +242,6 @@ body {
 }
 .imgc:hover {
   content: url(imagens/iconccor.png);
-}
-
-.stacks ul li div:hover::after {
-  content: attr(data);
-  position: absolute;
-  font-size: 13px;
-  font-weight: bold;
-  background-color: #1312197e;
-  border-radius: 4px;
-  padding: 10px;
-}
-
-.stacks ul li img:hover {
-  transform: scale(1.2);
-  cursor: pointer;
 }
 
 /* confg Projetos */
@@ -444,7 +456,6 @@ footer {
   position: fixed;
   width: 50px;
   bottom: 0;
-  margin-bottom: 30px;
   right: 0;
 }
 .btnvert :hover {
@@ -456,7 +467,7 @@ footer {
   background-color: #01020ebc;
   border-radius: 10px;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
   color: white;
   position: absolute;
   display: flex;
@@ -465,17 +476,22 @@ footer {
   white-space: nowrap;
   font-size: 10px;
   letter-spacing: 1px;
+  direction: rtl;
 }
 
 #changeColorButton img {
   position: fixed;
+  position: absolute;
+  position: fixed;
   width: 50px;
   bottom: 0;
-  margin-right: 100%;
-  padding-bottom: 70px;
-  margin: 6px;
+  margin: 0px 0px 70px 10px;
 }
 
 #changeColorButton img:hover {
   transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
 }
