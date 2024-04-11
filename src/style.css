@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Roboto:ital,wght@1,900&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
+
+strong {
+  color: #f818f8;
+}
+body {
+  /* background-image: url(imagens/fundonew.jpeg); */
+
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  width: 100%;
+  height: auto;
+}
+
+.container-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  flex-wrap: wrap;
+}
+
+.textoHome,
+.img-container {
+  max-width: 100%;
+  max-height: 400px;
+  margin: 5% 10%;
+  padding: 25px;
+}
+
+/* Confg do texto Home */
+.textoHome > h1:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.textoHome > h1:nth-child(2) {
+  animation-delay: 2s;
+  animation: written_tex_name t 0.5s ease;
+}
+
+.textoHome > h1:nth-child(3) {
+  animation: written_text_name 0.5s ease forwards;
+  animation-delay: 3s;
+}
+
+.textoHome > .h1c {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-content div h1 span {
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 100%;
+  background-color: #46052ba7;
+  animation-delay: 0.5;
+  animation: written_text_box 1s ease;
+  animation-delay: 0.5s;
+}
+
+.container-content div h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+
+.container-content div h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+
+.container-content div h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+
+.container-content div h1 {
+  padding: 0px 4px;
+  color: transparent;
+  position: relative;
+  width: fit-content;
+  animation: written_text 0.5s ease forwards;
+  margin: 10px;
+}
+
+.textSombra {
+  text-shadow: none;
+}
+
+@keyframes written_text {
+  100% {
+    color: white;
+
+    text-shadow: 1px 1px 8px black;
+  }
+}
+#changeColorButton:hover ~ .text {
+  color: black;
+}
+
+@keyframes written_text_name {
+  100% {
+    color: #f818f8;
+  }
+}
+
+@keyframes written_text_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+/* confg da imagem home */
+
+.img-container .imgP {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid #f818f8;
+}
+
+/* confg das staks */
+
+.skills {
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.skills img:hover {
+  transform: scale(1.2);
+}
+
+.skills > img {
+  margin-left: 30px;
+
+  width: 30px;
+  background-color: #01020ebc;
+  border-radius: 10px;
+}
+
+/* habilidades */
+
+#container-habilidades {
+  /* background-color: #0d11177b;*/
+  width: 100%;
+
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  flex-wrap: wrap;
+}
+
+.stacks-texto,
+.stacks {
+  max-height: 400px;
+  margin: 5% 5%;
+  padding: 25px;
+}
+
+.stacks-texto h1 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 60px;
+}
+
+.stacks {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stacks img {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 70px;
+  max-width: 70px;
+  height: auto;
+}
+
+.txtHab {
+  padding: 20px;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: #01020ebc;
+}
+
+.txtHab h3 {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.txtHab img:hover + h3 {
+  display: block;
+}
+
+.txtHab img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.imghtml:hover {
+  content: url(../imagens/iconhtmlcor.png);
+}
+
+.imgcss:hover {
+  content: url(../imagens/iconcsscor.png);
+}
+
+.imgjs:hover:hover {
+  content: url(../imagens/iconjscor.png);
+}
+.imgreact:hover {
+  content: url(../imagens/iconreactcor.png);
+}
+.imgty:hover {
+  content: url(../imagens/icontycor.png);
+}
+.imgc:hover {
+  content: url(../imagens/iconccor.png);
+}
+
+/* confg Projetos */
+
+#container-projetos {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+#container-projetos .h1Projetos {
+  text-align: center;
+  top: 0;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 30px;
+  position: absolute;
+}
+
+.wrapper-projects {
+  margin-top: 50px;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-project {
+  position: relative;
+
+  flex-wrap: wrap;
+  padding: 30px 20px 20px;
+  margin: 60px 30px;
+  background-color: white;
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 450px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+}
+
+.card-project ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
+  width: 100%;
+  background-color: #01020ebc;
+  border-radius: 20px 20px 0px 0px;
+  z-index: -1;
+}
+
+.content-project {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.image-project {
+  position: relative;
+  height: 240px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 4px solid #01020e;
+  margin: 0 auto;
+}
+
+.image-project > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid white;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+
+.image-project img:hover {
+  transform: scale(1.1);
+}
+
+.content-project span {
+  color: black;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin: 0.75rem auto 0.5rem auto;
+}
+
+.content-project p {
+  color: #3d3d4b;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.75rem auto 0.5rem auto;
+}
+
+.cta-project {
+  width: 200px;
+  margin: auto auto 15px auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.btnProjetos {
+  border: none;
+}
+
+.btnProjetos a {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background-color: #01020ebc;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.btnProjetos:hover {
+  background-color: #01020e;
+  border-radius: 8px;
+}
+
+/* confg contato */
+
+#container-contato {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+
+  flex-wrap: wrap;
+}
+
+.textoContato h2 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 50px;
+  margin: 30px;
+}
+
+.textoContato,
+.card-contato {
+  margin: 80px 0px;
+  width: 300px;
+}
+
+.card-contato {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.linkWhats img,
+.linkLinke img,
+.linkGmail img {
+  width: 50px;
+  height: 50px;
+}
+
+.linkWhats,
+.linkLinke,
+.linkGmail {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 45px;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #01020ebc;
+}
+
+.linkLinke {
+  margin-left: -100px;
+}
+.linkGmail {
+  width: 190px;
+}
+
+.linkGmail:hover {
+  background-color: #c5221f;
+}
+
+.linkWhats:hover {
+  background-color: #10c146;
+}
+
+.linkLinke:hover {
+  background-color: #0a66c2;
+}
+
+footer {
+  background-color: #01020ebc;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.btnvert {
+  padding-bottom: 190px;
+  position: fixed;
+  width: 50px;
+  bottom: 0;
+  right: 0;
+}
+.btnvert :hover {
+  background-color: #01020e;
+  border-radius: 8px;
+}
+
+.btnvert a {
+  background-color: #01020ebc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  position: absolute;
+  display: flex;
+  right: 0;
+  writing-mode: vertical-rl; /* Define a orientação vertical da escrita */
+  white-space: nowrap;
+  font-size: 10px;
+  letter-spacing: 1px;
+  direction: rtl;
+}
+
+#changeColorButton img {
+  position: relative;
+  position: fixed;
+  width: 50px;
+  bottom: 0;
+  margin: 0px 0px 70px 10px;
+}
+
+#changeColorButton img:hover {
+  transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Portfolío Vitória Developer</title>
+
+    <link
+      rel="stylesheet"
+      href="/src/style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans:ital,wght@1,800&family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body id="bodySobre">
+    <div
+      class="header-container"
+      id="header-container">
+      <!-- O conteúdo do header será carregado aqui -->
+    </div>
+
+    <div id="home">
+      <!-- Restante do conteúdo da página -->
+    </div>
+
+    <div id="sectionSobre">
+      <div class="imgSobre">
+        <img
+          src="../imagens/iconprogramador.png"
+          alt="" />
+      </div>
+
+      <h2 class="tituloS">Um pouco sobre</h2>
+      <h3 class="tituloS"><strong>Quem sou eu </strong></h3>
+      <p class="p1">
+        Olá! Como você já sabe meu nome é Vitória, tenho 20 anos e estou
+        atualmente cursando o terceiro semestre do curso de Análise e
+        Desenvolvimento de Sistemas na Universidade Impacta, uma instituição de
+        tecnologia em São Paulo.
+        <br /><br />
+        Nasci no interior de São Paulo e mudei para a cidade durante a
+        adolescência. Foi aqui, na agitação da cidade grande, que descobri minha
+        paixão pela tecnologia. Meu primeiro contato com programação ocorreu em
+        2022, quando vi pela primeira vez um código HTML. Dali em diante, fiquei
+        fascinada pela ideia de poder
+        <strong
+          >resolver problemas e criar soluções através de linhas de
+          código.</strong
+        >
+      </p>
+      <br />
+
+      <img
+        class="imgTag"
+        src="imagens/icontag.png"
+        alt="" />
+      <p>
+        Em 2023, decidi aprofundar meus conhecimentos na área, focando
+        especialmente no desenvolvimento front-end. Concentrei-me em criar
+        interfaces modernas e estudei novas abordagens para construir soluções
+        visualmente impactantes. No último ano, tive a oportunidade de trabalhar
+        como freelancer, atuando como desenvolvedora web e front-end em uma
+        empresa especializada em websites institucionais, landing pages e
+        plataformas de e-commerce.
+        <br /><br />
+        Além do trabalho prático, estou constantemente em busca de
+        aprimoramento, sempre estudando e compartilhando conhecimento. Estou
+        determinada a crescer e levar minhas habilidades para o próximo nível.
+        Estou animada para continuar
+        <strong>minha jornada no universo da tecnologia</strong>, explorando
+        novas possibilidades e contribuindo para projetos inovadores.
+      </p>
+
+      <img
+        class="imgTag2"
+        src="imagens/icontag.png"
+        alt="" />
+
+      <button
+        onclick="btnSobre()"
+        class="btnSobre">
+        Voltar Ao Inicio
+      </button>
+    </div>
+
+    <button id="changeColorButton">
+      <img
+        src="imagens/icon-lua-sol.png"
+        alt="" />
+    </button>
+
+    <style>
+      #sectionSobre {
+        border-radius: 20px;
+        background-color: #01020ebc;
+        color: white;
+        margin-top: 50px;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 80px;
+        font-size: 17px;
+        margin-bottom: 50px;
+      }
+
+      .btnSobre {
+        position: relative;
+        background-color: #f818f8;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        width: 110px;
+        margin-top: 80px;
+        right: 50px;
+      }
+      .btnSobre:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      .p1 {
+        margin-top: 180px;
+      }
+
+      .tituloS {
+        position: relative;
+        display: flex;
+      }
+
+      h2 {
+        font-family: "Amatic SC", sans-serif;
+        position: absolute;
+        right: 0;
+        margin: 0;
+        font-size: 55px;
+        top: 0px;
+        padding-left: 70%;
+        font-size: 40px;
+      }
+      h3 {
+        font-family: "Amatic SC", sans-serif;
+        position: absolute;
+        top: 10px;
+        padding-left: 73%;
+        font-size: 40px;
+        z-index: 1;
+      }
+
+      .imgSobre {
+        position: absolute;
+        top: 230px;
+        z-index: 1;
+      }
+      .imgSobre > img {
+        height: 120px;
+      }
+
+      .imgTag {
+        position: relative;
+        right: 40px;
+        width: 40px;
+        margin: 20px;
+      }
+      .imgTag2 {
+        position: relative;
+        right: 40px;
+        width: 40px;
+        left: 93%;
+        top: -50px;
+      }
+    </style>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>
