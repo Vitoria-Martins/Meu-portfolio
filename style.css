@@ -421,7 +421,7 @@ body {
   justify-content: center;
   width: 50px;
   height: 50px;
-  padding: 25px;
+  padding: 40px;
   align-items: center;
   text-align: center;
   margin: 10px;
@@ -430,10 +430,10 @@ body {
 }
 
 .linkLinke {
-  margin-left: -110px;
+  margin-left: -90px;
 }
 .linkGmail {
-  width: 160px;
+  width: 170px;
 }
 
 .linkGmail:hover {
