@@ -41,8 +41,10 @@
           alt="" />
       </div>
 
-      <h2 class="tituloS">Um pouco sobre</h2>
-      <h3 class="tituloS"><strong>Quem sou eu </strong></h3>
+      <div class="tituloS">
+        <h2>Um pouco sobre</h2>
+        <h3><strong>Quem sou eu </strong></h3>
+      </div>
       <p class="p1">
         Olá! Como você já sabe meu nome é Vitória, tenho 20 anos e estou
         atualmente cursando o terceiro semestre do curso de Análise e
@@ -102,61 +104,52 @@
 
     <style>
       #sectionSobre {
-        position: absolute;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 80px;
+        margin: 30px 10% 30px 10%;
+
+        position: relative;
         border-radius: 20px;
         background-color: #01020ebc;
         color: white;
-        margin-top: 50px;
-        margin-left: 15%;
-        margin-right: 15%;
-        padding: 80px;
-        font-size: 17px;
       }
 
       .btnSobre {
-        position: relative;
         background-color: #f818f8;
         color: white;
         border: none;
+        margin-top: 20px;
         padding: 10px;
         border-radius: 4px;
         width: 120px;
-        margin-top: 80px;
-        right: 50px;
       }
       .btnSobre:hover {
         transform: scale(1.2);
         cursor: pointer;
       }
       .p1 {
-        margin-top: 60px;
+        margin-top: 150px;
       }
 
       .tituloS {
-        position: relative;
-        display: flex;
+        position: absolute;
       }
 
-      h2 {
+      .tituloS {
         font-family: "Amatic SC", sans-serif;
         position: absolute;
         right: 0;
         margin: 0;
-        font-size: 55px;
         top: 0px;
-        padding-left: 70%;
-        font-size: 40px;
-      }
-      h3 {
-        font-family: "Amatic SC", sans-serif;
-        position: absolute;
-        top: 10px;
-        padding-left: 73%;
-        font-size: 40px;
+        font-size: 25px;
+        width: 45%;
+        margin-top: 80px;
       }
 
       .imgSobre {
-        left: 15%;
+        left: 12%;
         position: absolute;
         top: 80px;
       }
@@ -165,17 +158,17 @@
       }
 
       .imgTag {
-        position: relative;
-        right: 40px;
+        position: absolute;
+        left: 20px;
         width: 40px;
-        margin: 20px;
+        top: 430px;
       }
       .imgTag2 {
-        position: relative;
+        position: absolute;
         right: 40px;
         width: 40px;
-        left: 93%;
-        top: -50px;
+        right: 50px;
+        bottom: 80px;
       }
     </style>
 
