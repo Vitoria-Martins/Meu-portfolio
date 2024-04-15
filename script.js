@@ -103,12 +103,3 @@ window.addEventListener("load", function () {
     document.body.style.color = savedTextColor;
   }
 });
-
-// Verifica se está na página sobre
-var isSobrePage = window.location.pathname.includes("sobre.html");
-// Verifique o título da página
-
-if (isSobrePage) {
-  // Se estiver na página sobre, você pode adicionar aqui o código específico para essa página
-  // Por exemplo, se houver elementos na página que precisam ter suas cores alteradas, você pode fazer isso aqui
-}
