@@ -224,7 +224,7 @@ body {
   content: url(../imagens/iconcsscor.png);
 }
 
-.imgjs:hover:hover {
+.imgjs:hover {
   content: url(../imagens/iconjscor.png);
 }
 .imgreact:hover {
@@ -234,6 +234,27 @@ body {
   content: url(../imagens/icontycor.png);
 }
 .imgc:hover {
+  content: url(../imagens/iconccor.png);
+}
+
+.imghtml:active {
+  content: url(../imagens/iconhtmlcor.png);
+}
+
+.imgcss:active {
+  content: url(../imagens/iconcsscor.png);
+}
+
+.imgjs:active {
+  content: url(../imagens/iconjscor.png);
+}
+.imgreact:active {
+  content: url(../imagens/iconreactcor.png);
+}
+.imgty:active {
+  content: url(../imagens/icontycor.png);
+}
+.imgc:active {
   content: url(../imagens/iconccor.png);
 }
 
@@ -466,7 +487,7 @@ footer p {
   text-indent: -2.5em;
 }
 .btnvert {
-  padding-bottom: 190px;
+  padding-bottom: 170px;
   position: fixed;
   width: 50px;
   bottom: 0;
@@ -480,7 +501,6 @@ footer p {
 .btnvert a {
   text-shadow: 1px 1px 8px #f818f8;
   padding: 10px;
-  margin: 10px;
   color: #f818f8;
   position: absolute;
   display: flex;
@@ -490,7 +510,6 @@ footer p {
   font-size: 12px;
   letter-spacing: 1px;
   direction: rtl;
-
   transition: transform 0.2s ease-in-out;
 }
 
@@ -499,7 +518,7 @@ footer p {
   position: fixed;
   width: 40px;
   bottom: 0;
-  margin: 0px 0px 30px 10px;
+  margin: 0px 0px 60px 10px;
   left: 0;
 }
 
