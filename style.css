@@ -217,45 +217,45 @@ body {
 }
 
 .imghtml:hover {
-  content: url(../imagens/iconhtmlcor.png);
+  content: url(imagens/iconhtmlcor.png);
 }
 
 .imgcss:hover {
-  content: url(../imagens/iconcsscor.png);
+  content: url(imagens/iconcsscor.png);
 }
 
 .imgjs:hover {
-  content: url(../imagens/iconjscor.png);
+  content: url(imagens/iconjscor.png);
 }
 .imgreact:hover {
-  content: url(../imagens/iconreactcor.png);
+  content: url(imagens/iconreactcor.png);
 }
 .imgty:hover {
-  content: url(../imagens/icontycor.png);
+  content: url(imagens/icontycor.png);
 }
 .imgc:hover {
-  content: url(../imagens/iconccor.png);
+  content: url(imagens/iconccor.png);
 }
 
 .imghtml:active {
-  content: url(../imagens/iconhtmlcor.png);
+  content: url(imagens/iconhtmlcor.png);
 }
 
 .imgcss:active {
-  content: url(../imagens/iconcsscor.png);
+  content: url(imagens/iconcsscor.png);
 }
 
 .imgjs:active {
-  content: url(../imagens/iconjscor.png);
+  content: url(imagens/iconjscor.png);
 }
 .imgreact:active {
-  content: url(../imagens/iconreactcor.png);
+  content: url(imagens/iconreactcor.png);
 }
 .imgty:active {
-  content: url(../imagens/icontycor.png);
+  content: url(imagens/icontycor.png);
 }
 .imgc:active {
-  content: url(../imagens/iconccor.png);
+  content: url(imagens/iconccor.png);
 }
 
 /* confg Projetos */
