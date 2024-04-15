@@ -104,9 +104,6 @@ body {
     text-shadow: 1px 1px 8px black;
   }
 }
-#changeColorButton:hover ~ .text {
-  color: black;
-}
 
 @keyframes written_text_name {
   100% {
@@ -160,7 +157,6 @@ body {
 #container-habilidades {
   /* background-color: #0d11177b;*/
   width: 100%;
-
   height: auto;
   display: flex;
   justify-content: center;
@@ -196,9 +192,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-width: 70px;
-  max-width: 70px;
-  height: auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
 }
 
 .txtHab {
@@ -208,15 +204,11 @@ body {
   background-color: #01020ebc;
 }
 
-.txtHab h3 {
+.txtHab h1 {
   font-size: 10px;
   text-align: center;
   margin-bottom: 10px;
   color: gray;
-}
-
-.txtHab img:hover + h3 {
-  display: block;
 }
 
 .txtHab img:hover {
@@ -399,13 +391,15 @@ body {
 
 .textoContato,
 .card-contato {
-  margin: 80px 0px;
+  margin: 30px 0px 90px 0px;
+  align-items: center;
   width: 300px;
 }
 
 .card-contato {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-left: 80px;
 }
 .linkWhats img,
 .linkLinke img,
@@ -419,21 +413,21 @@ body {
 .linkGmail {
   display: flex;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   padding: 40px;
   align-items: center;
   text-align: center;
-  margin: 10px;
+  margin: 0px 10px 10px 0px;
   border-radius: 8px;
   background-color: #01020ebc;
 }
 
 .linkLinke {
-  margin-left: -90px;
+  margin-left: -110px;
 }
 .linkGmail {
-  width: 170px;
+  width: 220px;
 }
 
 .linkGmail:hover {
@@ -448,12 +442,28 @@ body {
   background-color: #0a66c2;
 }
 
+.linkGmail:active {
+  background-color: #c5221f;
+}
+
+.linkWhats:active {
+  background-color: #10c146;
+}
+
+.linkLinke:active {
+  background-color: #0a66c2;
+}
+
 footer {
-  background-color: #01020ebc;
+  background-color: #01020e1e;
   text-align: center;
   width: 100%;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 1px;
+  padding: 15px;
+}
+footer p {
+  text-indent: -2.5em;
 }
 .btnvert {
   padding-bottom: 190px;
@@ -463,32 +473,34 @@ footer {
   right: 0;
 }
 .btnvert :hover {
-  background-color: #01020e;
   border-radius: 8px;
+  transform: translateX(-5px) rotate(-5deg);
 }
 
 .btnvert a {
-  background-color: #01020ebc;
-  border-radius: 10px;
+  text-shadow: 1px 1px 8px #f818f8;
   padding: 10px;
   margin: 10px;
-  color: white;
+  color: #f818f8;
   position: absolute;
   display: flex;
   right: 0;
   writing-mode: vertical-rl; /* Define a orientação vertical da escrita */
   white-space: nowrap;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1px;
   direction: rtl;
+
+  transition: transform 0.2s ease-in-out;
 }
 
 #changeColorButton img {
   position: relative;
   position: fixed;
-  width: 50px;
+  width: 40px;
   bottom: 0;
-  margin: 0px 0px 70px 10px;
+  margin: 0px 0px 30px 10px;
+  left: 0;
 }
 
 #changeColorButton img:hover {
@@ -496,5 +508,14 @@ footer {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 4px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f000; /* Cor de fundo da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f818f8;
+  width: 1px; /* Cor do indicador da barra de rolagem ao passar o mouse */
 }

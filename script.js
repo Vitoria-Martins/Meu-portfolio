@@ -51,7 +51,7 @@ function abrirInsta() {
 
 //volta a pagina home
 function btnSobre() {
-  window.location.href = "../src/index.html";
+  window.location.href = "index.html";
 }
 
 //abre os links da sessao de contato
@@ -103,3 +103,12 @@ window.addEventListener("load", function () {
     document.body.style.color = savedTextColor;
   }
 });
+
+// Verifica se está na página sobre
+var isSobrePage = window.location.pathname.includes("sobre.html");
+// Verifique o título da página
+
+if (isSobrePage) {
+  // Se estiver na página sobre, você pode adicionar aqui o código específico para essa página
+  // Por exemplo, se houver elementos na página que precisam ter suas cores alteradas, você pode fazer isso aqui
+}
