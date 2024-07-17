@@ -1,272 +1,223 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <title>Portfolío Vitória Developer</title>
-    <link
-      rel="icon"
-      href="imagens/iconV.png" />
-    <link
-      rel="stylesheet"
-      href="style.css" />
 
-      <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans:ital,wght@1,800&family=Roboto:ital,wght@1,900&display=swap"
-      rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolío Vitória Developer</title>
+  <link rel="icon" href="imagens/iconV.png" />
+  <link rel="stylesheet" href="style.css" />
 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans:ital,wght@1,800&family=Roboto:ital,wght@1,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
-  </head>
-  <body>
-    <!-- header -->
-    
+</head>
 
-    <div
-      id="header-container"
-      class="header-container"></div>
-    <!-- header end -->
+<body>
+  <!-- header -->
 
-    <main>
-      <div class="container-content">
-        <div class="textoHome">
-          <h1 class="textSombra">Olá! <span></span></h1>
-          <h1 class="textSombra">Meu nome é<span></span></h1>
-          <h1 class="h1c">Vitória Martins<span></span></h1>
-        </div>
-      
+
+  <div id="header-container" class="header-container"></div>
+  <!-- header end -->
+
+  <main>
+    <div class="container-content">
+      <div class="textoHome">
+        <h1 class="textSombra">Olá! <span></span></h1>
+        <h1 class="textSombra">Meu nome é<span></span></h1>
+        <h1 class="h1c">Vitória Martins<span></span></h1>
+      </div>
+
 
       <div class="img-container">
-        <img
-          class="imgP"
-          src="imagens/myphoto.jpeg"
-          alt="imagem perfil" />
+        <img class="imgP" src="imagens/myphoto.jpeg" alt="imagem perfil" />
 
         <div class="skills">
-          <img
-            src="imagens/icon-git.png"
-            alt=""
-            onclick="abrirGit()" />
+          <img src="imagens/icon-git.png" alt="" onclick="abrirGit()" />
 
-          <img
-            src="imagens/icon-link.png"
-            alt=""
-            onclick="abrirlinke()" />
+          <img src="imagens/icon-link.png" alt="" onclick="abrirlinke()" />
 
-          <img
-            src="imagens/icon-insta.png"
-            alt=""
-            onclick="abrirInsta()" />
+          <img src="imagens/icon-insta.png" alt="" onclick="abrirInsta()" />
         </div>
       </div>
+    </div>
+  </main>
+
+  <section id="container-habilidades">
+    <div class="stacks-texto">
+      <p>
+      <h1> Minhas <br> <strong>Habilidades</strong>. </h1> <br>
+      Ao lado estão as <strong>tecnologias </strong> <br> e <strong>frameworks</strong> que possuo <br>habilidades e
+      conhecimentos.
+      </p>
+    </div>
+    <div class="stacks">
+
+      <ul>
+        <li>
+          <div class="txtHab">
+            <h1>JavaScript</h1>
+            <img class="imgjs" src="imagens/iconjs.png" alt="js-icon" />
+          </div>
+        </li>
+      </ul>
+
+
+      <ul>
+        <li>
+          <div class="txtHab">
+            <h1>HTML</h1>
+            <img class="imghtml" src="imagens/iconhtml.png" alt="html-icon" />
+          </div>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <div class="txtHab">
+            <h1>CSS</h1>
+            <img class="imgcss" src="imagens/iconcss.png" alt="css-icon" />
+          </div>
+        </li>
+      </ul>
+
+
+      <ul>
+        <li>
+          <div class="txtHab">
+            <h1>TypeScript</h1>
+            <img class="imgty" src="imagens/iconty.png" alt="ty-icon" />
+          </div>
+        </li>
+      </ul>
+
+
+      <ul>
+        <li>
+          <div class="txtHab">
+            <h1>React</h1>
+            <img class="imgreact" src="imagens/iconreact.png" alt="react-icon" />
+          </div>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+
+          <div class="txtHab">
+            <h1>Csharp</h1>
+            <img class="imgc" src="imagens/iconc.png" alt="C#-icon" />
+          </div>
+        </li>
+      </ul>
+
+
+
+
+
+
+  </section>
+
+  <section id="container-projetos">
+    <div class="h1Projetos">
+      <h1>Meus <strong>Projetos</strong></h1>
+    </div>
+    <div class="wrapper-projects">
+      <div class="card-project">
+        <div class="content-project">
+          <div class="image-project">
+            <img src="imagens/img-spotify.jpg" alt="" />
+          </div>
+          <span>Spotify</span>
+          <p>Pagina semelhante ao spotify criada com Javascript</p>
+          <div class="cta-project">
+            <button class="btnProjetos">
+              <a href="https://github.com/Vitoria-Martins/Projeto-Spotify" target="_blank">codigo
+              </a>
+
+
+            </button>
+            <button class="btnProjetos">
+              <a href="/" target="_blank">Site</a>
+            </button>
+
+          </div>
+        </div>
       </div>
-    </main>
 
-    <section id="container-habilidades">
-      <div class="stacks-texto">
-        <p>
-         <h1> Minhas <br> <strong>Habilidades</strong>. </h1> <br>
-         Ao lado estão as <strong>tecnologias </strong> <br> e <strong>frameworks</strong> que possuo <br>habilidades e conhecimentos.
-       </p>
-     </div>
-       <div class="stacks">
-
-        <ul>
-          <li>
-            <div class="txtHab">
-              <h1>JavaScript</h1>
-              <img class="imgjs"
-                src="imagens/iconjs.png"
-                alt="js-icon" />
-            </div>
-          </li>
-        </ul>
-
-        
-         <ul>
-           <li>
-             <div class="txtHab" >
-              <h1>HTML</h1>
-               <img  class="imghtml"
-                 src="imagens/iconhtml.png"
-                 alt="html-icon" />
-             </div>
-           </li>
-         </ul>
- 
-         <ul>
-           <li>
-             <div class="txtHab">
-              <h1>CSS</h1>
-               <img class="imgcss"
-                 src="imagens/iconcss.png"
-                 alt="css-icon" /> 
-             </div>
-           </li>
-         </ul>
- 
-        
-         <ul>
-          <li>
-            <div class="txtHab">
-              <h1>TypeScript</h1>
-              <img class="imgty"
-                src="imagens/iconty.png"
-                alt="ty-icon" /> 
-              </div>
-          </li>
-        </ul>
- 
-         
-         <ul>
-          <li>
-            <div class="txtHab">
-              <h1>React</h1>
-              <img class="imgreact"
-                src="imagens/iconreact.png"
-                alt="react-icon" /> 
-              </div>
-          </li>
-        </ul>
-
-        <ul>
-          <li>
-           
-            <div class="txtHab"> 
-              <h1>Csharp</h1>
-              <img  class="imgc"
-                src="imagens/iconc.png"
-                alt="C#-icon" /> </div>
-          </li>
-        </ul>
-     
-
-
-        
-        
-      
-    </section>
-
-<section id="container-projetos">
-  <div class="h1Projetos">
-    <h1>Meus <strong>Projetos</strong></h1>
-   </div>
-        <div class="wrapper-projects">
-          <div class="card-project">
-            <div class="content-project">
-              <div class="image-project">
-                <img
-                  src="imagens/img-spotify.jpg"
-                  alt="" />
-              </div>
-              <span>Spotify</span>
-              <p>Pagina semelhante ao spotify criada com Javascript</p>
-              <div class="cta-project">
-                <button class="btnProjetos">
-                  <a
-                    href="https://github.com/Vitoria-Martins/Projeto-Spotify"
-                    target="_blank"
-                    >codigo
-                  </a>
-
-                  
-                </button>
-                <button class="btnProjetos">
-                  <a
-                    href="/"
-                    target="_blank"
-                    >Site</a
-                  >
-                </button>
-
-              </div>
-            </div>
+      <div class="card-project">
+        <div class="content-project">
+          <div class="image-project">
+            <img src="./imagens/img-cadastro2.png" alt="" />
           </div>
-
-          <div class="card-project">
-            <div class="content-project">
-              <div class="image-project">
-                <img
-                  src="./imagens/img-cadastro2.png"
-                  alt="" />
-              </div>
-              <span>Cadastro </span>
-              <p>Pagina de cadastro criada com HTML e CSS</p>
-              <div class="cta-project">
-                <button class="btnProjetos">
-                  <a
-                    href="https://github.com/Vitoria-Martins/Python/blob/master/jogoV.py"
-                    target="_blank"
-                    >codigo
-                  </a>
-                </button >
-              <button class="btnProjetos">
-                <a
-                  href="https://vitoria-martins.github.io/Cadastro/"
-                  target="_blank"
-                  >Site</a
-                >
-              </button>
-              </div>
-            </div>
+          <span>Cadastro </span>
+          <p>Pagina de cadastro criada com HTML e CSS</p>
+          <div class="cta-project">
+            <button class="btnProjetos">
+              <a href="https://github.com/Vitoria-Martins/Python/blob/master/jogoV.py" target="_blank">codigo
+              </a>
+            </button>
+            <button class="btnProjetos">
+              <a href="https://vitoria-martins.github.io/Cadastro/" target="_blank">Site</a>
+            </button>
           </div>
+        </div>
+      </div>
 
     </div>
-</section>
+  </section>
 
-<section id="container-contato">
+  <section id="container-contato">
 
-  
-  <div class="textoContato">
-    <h2>Venha me  <strong>Contatar</strong>.</h2>
-    <p>Olá de novo! Vou deixar algumas <strong>redes sociais</strong> 
-       para me contatar quando quiser.</p>
-  </div>
-  <div class="card-contato">
-  
 
-    <div class="linkWhats">
-        <img src="imagens/icon-whats.png" alt="WhatsApp" onclick="abrirWhats()"> 
+    <div class="textoContato">
+      <h2>Venha me <strong>Contatar</strong>.</h2>
+      <p>Olá de novo! Vou deixar algumas <strong>redes sociais</strong>
+        para me contatar quando quiser.</p>
+    </div>
+    <div class="card-contato">
+
+
+      <div class="linkWhats">
+        <img src="imagens/icon-whats.png" alt="WhatsApp" onclick="abrirWhats()">
+      </div>
+
+      <div class="linkLinke">
+        <img src="imagens/icon-linke2.png" alt="WhatsApp" onclick="abrirlinke() ">
+      </div>
+
+      <div class="linkGmail">
+        <img src="imagens/icon-gmail.png" alt="Gmail" target="_blank" onclick="abrirGmail()">
+      </div>
     </div>
 
-    <div class="linkLinke">
-      <img src="imagens/icon-linke2.png" alt="WhatsApp" onclick="abrirlinke() "> 
+  </section>
+
+
+  <div class="btnvert">
+    <a href="index.html">
+      Voltar ao topo <i class="fas fa-arrow-up"> </i> </a>
   </div>
 
-  <div class="linkGmail">
-    <img src="imagens/icon-gmail.png" alt="Gmail" target="_blank" onclick="abrirGmail()" >
-</div>
-    </div>
-    
-</section>
 
+  <div id="changeColorButton"><img src="imagens/icon-lua-sol.png" alt=""></div>
 
-<div class="btnvert">
-  <a href="index.html"> 
-      Voltar ao topo <i class="fas fa-arrow-up" > </i>  </a>
-</div>
-
-
-<div id="changeColorButton"><img src="imagens/icon-lua-sol.png" alt=""></div>
-
-<script src="script.js"></script> <!-- Seu script JavaScript -->
+  <script src="script.js"></script> <!-- Seu script JavaScript -->
 </body>
+
 </html>
 
 <footer>
   <p>Desenvolvido por <br>
-  Vitoria Martins  © 2024</p>
+    Vitoria Martins © 2024</p>
 </footer>
-    <script src="script.js"></script>
-  </body>
+<script src="script.js"></script>
+</body>
+
 </html>
